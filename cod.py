@@ -14,7 +14,7 @@ one_hot_encoded = data['whoAmI'].apply(lambda x: pd.Series({'robot': 1 if x == '
 # Объединяем с исходным DataFrame
 final_data = pd.concat([data, one_hot_encoded], axis=1)
 
-# Печатаем результат
+# Печатаем результат первые пять строк
 print("\nOne Hot Encoded данные:")
 print(final_data.head())
   
